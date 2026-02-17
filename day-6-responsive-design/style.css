@@ -1,0 +1,358 @@
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  overflow-x: hidden; /* avoid horizontal scroll */
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+  color: #222;
+  background-color: #fffdce; /* soft light background from palette */
+  font-size: 16px; /* base size for rem */
+}
+
+/* Make images responsive */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Header and navigation */
+
+.site-header {
+  background-color: #f075ae; /* main accent color */
+  color: #fffdce;
+  padding: 1rem 5vw; /* use vw for horizontal padding */
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  border-bottom: 0.25rem solid #f7db91; /* yellow accent border, rem unit */
+}
+
+.logo {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.main-nav ul {
+  list-style: none;
+  text-align: right;
+}
+
+.main-nav li {
+  display: inline-block;
+  margin-left: 1.5rem;
+}
+
+.main-nav a {
+  color: #fffdce;
+  text-decoration: none;
+  font-size: 0.95rem;
+  padding: 0.35em 0.9em; /* em for padding relative to font size */
+  border-radius: 999px;
+  transition: background-color 0.2s ease, color 0.2s ease;
+  border: 1px solid transparent;
+}
+
+.main-nav a:hover {
+  background-color: #fffdce;
+  color: #f075ae;
+  border-color: #f7db91;
+}
+
+/* Welcome section (two-column style) */
+
+.welcome {
+  max-width: 1100px;
+  width: 90%; /* % unit for responsive width */
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #ffffff;
+  border-radius: 0.75rem;
+  border: 0.125rem solid #f7db91; /* soft yellow border */
+  box-shadow: 0 0.25rem 0.625rem rgba(240, 117, 174, 0.15);
+
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  column-gap: 2rem;
+}
+
+.welcome-text h1 {
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+  color: #f075ae; /* main heading color */
+}
+
+.welcome-text p + p {
+  margin-top: 0.75rem;
+}
+
+.welcome-aside {
+  background-color: #f7db91; /* yellow panel */
+  padding: 1rem 1.25rem;
+  border-radius: 0.5rem;
+  border: 0.0625rem solid #9bc264; /* green accent border */
+}
+
+.welcome-aside h2 {
+  margin-bottom: 0.75rem;
+  font-size: 1.2rem;
+  color: #9bc264; /* green subheading */
+}
+
+.welcome-aside ul {
+  list-style: disc;
+  padding-left: 1.25rem;
+}
+
+.welcome-aside li + li {
+  margin-top: 0.4rem;
+}
+
+/* Centered profile card */
+
+.profile-section {
+  min-height: 60vh; /* vh unit */
+  padding: 2rem 0;
+  display: grid;
+  place-items: center;
+}
+
+.profile-card {
+  background-color: #ffffff;
+  padding: 2rem;
+  max-width: 20rem; /* ~320px */
+  width: 90%;
+  text-align: center;
+  border-radius: 0.75rem;
+  border: 0.125rem solid #f7db91;
+  box-shadow: 0 0.5rem 1.25rem rgba(155, 194, 100, 0.25);
+  position: relative;
+}
+
+.profile-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 0.75rem;
+  border-top: 0.3125rem solid #9bc264; /* green accent strip on top */
+  pointer-events: none; /* don't block clicks on the button */
+}
+
+.profile-card img {
+  width: 6.25rem; /* 100px */
+  height: 6.25rem;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 0.75rem;
+  border: 0.1875rem solid #f075ae;
+}
+
+.profile-card h2 {
+  font-size: 1.25rem;
+  margin-bottom: 0.25rem;
+  color: #f075ae;
+}
+
+.profile-role {
+  font-size: 0.95rem;
+  color: #555;
+  margin-bottom: 0.75rem;
+}
+
+.profile-text {
+  font-size: 0.9rem;
+  color: #555;
+  margin-bottom: 1rem;
+}
+
+/* Resume button (styled link) */
+
+.profile-button {
+  display: inline-block;
+  padding: 0.5rem 1.5rem;
+  border-radius: 999px;
+  background-color: #9bc264; /* green button */
+  color: #ffffff;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+  text-decoration: none; /* remove underline */
+}
+
+.profile-button:hover {
+  background-color: #f075ae; /* hover to pink */
+  transform: translateY(-0.0625rem);
+}
+
+/* Services section */
+
+.services {
+  max-width: 1100px;
+  width: 90%;
+  margin: 0 auto 3rem auto;
+  padding: 2rem 0;
+}
+
+.services-heading {
+  text-align: center;
+  margin-bottom: 0.5rem;
+  font-size: 1.6rem;
+  color: #f075ae;
+}
+
+.services-intro {
+  text-align: center;
+  max-width: 37.5rem; /* 600px */
+  margin: 0 auto 1.5rem auto;
+  color: #555;
+  font-size: 0.95rem;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(13.75rem, 1fr)); /* 220px */
+  gap: 1.5rem;
+}
+
+.service-box {
+  background-color: #ffffff;
+  padding: 1.5rem;
+  border-radius: 0.625rem;
+  border: 0.0625rem solid #f7db91;
+  box-shadow: 0 0.1875rem 0.5rem rgba(240, 117, 174, 0.12);
+}
+
+.service-box h3 {
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+  color: #9bc264;
+}
+
+.service-box p {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+/* Footer */
+
+.site-footer {
+  text-align: center;
+  padding: 1.5rem;
+  background-color: #9bc264; /* green footer */
+  color: #fffdce;
+  font-size: 0.9rem;
+  border-top: 0.25rem solid #f7db91;
+}
+
+.site-footer a {
+  color: #f075ae; /* pink links */
+  text-decoration: none;
+}
+
+.site-footer a:hover {
+  text-decoration: underline;
+}
+
+.footer-note {
+  margin-top: 0.4rem;
+  font-size: 0.8rem;
+  color: #fffdce;
+}
+
+/* =========================
+   TABLET (≤ 768px)
+   ========================= */
+
+@media (max-width: 768px) {
+  body {
+    font-size: 0.95rem; /* slightly smaller text */
+  }
+
+  .site-header {
+    grid-template-columns: 1fr;
+    row-gap: 0.75rem;
+    text-align: center;
+  }
+
+  .main-nav ul {
+    text-align: center;
+  }
+
+  .main-nav li {
+    margin-left: 0.75rem;
+  }
+
+  .welcome {
+    grid-template-columns: 1fr; /* two-column -> single column */
+    padding: 1.5rem 1.25rem;
+    margin-top: 1.5rem;
+  }
+
+  .welcome-text h1 {
+    font-size: 1.6rem;
+  }
+
+  .services {
+    padding: 1.5rem 0;
+  }
+
+  .services-grid {
+    grid-template-columns: 1fr; /* stack service cards vertically */
+  }
+
+  .profile-section {
+    padding: 1.5rem 0;
+  }
+}
+
+/* =========================
+   MOBILE (≤ 480px)
+   ========================= */
+
+@media (max-width: 480px) {
+  body {
+    font-size: 0.9rem; /* smaller base font for small screens */
+  }
+
+  .logo {
+    font-size: 1.1rem;
+  }
+
+  .main-nav li {
+    display: block;           /* stack nav links vertically */
+    margin: 0.25rem 0;
+  }
+
+  .main-nav a {
+    display: block;
+    padding: 0.5em 1em;       /* em-based padding for tap targets */
+  }
+
+  .welcome {
+    padding: 1.25rem 1rem;
+  }
+
+  .welcome-text h1 {
+    font-size: 1.4rem;
+  }
+
+  .profile-card {
+    padding: 1.5rem 1.25rem;
+  }
+
+  .services {
+    margin-bottom: 2rem;
+  }
+
+  .service-box {
+    padding: 1.25rem 1rem;
+  }
+}
