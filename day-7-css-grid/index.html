@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wanderly – Curated Travel Experiences</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="page-grid">
+      <!-- HEADER (Flexbox) -->
+      <header class="site-header">
+        <div class="container nav">
+          <div class="logo">Wanderly</div>
+          <nav class="nav-links">
+            <a href="#destinations">Destinations</a>
+            <a href="#experiences">Experiences</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+          </nav>
+        </div>
+      </header>
+
+      <!-- MAIN CONTENT -->
+      <main>
+        <!-- HERO (Grid + Flex buttons) -->
+        <section class="hero">
+          <div class="container hero-grid">
+            <div class="hero-text">
+              <h1>Discover Your Next Adventure</h1>
+              <p>
+                Handpicked journeys and immersive experiences across the globe —
+                from slow travel retreats to adrenaline-packed escapes.
+              </p>
+              <div class="hero-actions">
+                <a class="btn primary" href="#experiences">View Trips</a>
+                <a class="btn ghost" href="#contact">Plan With Us</a>
+              </div>
+            </div>
+
+            <div class="hero-panel">
+              <div class="hero-card">
+                <h2>Upcoming Highlights</h2>
+                <ul>
+                  <li>Sunrise treks in the Himalayas</li>
+                  <li>Slow-living stays in Italian hill towns</li>
+                  <li>Island-hopping in the Greek Cyclades</li>
+                  <li>Street food tours in Southeast Asia</li>
+                  <li>Remote work retreats by the ocean</li>
+                  <li>Small group adventures for solo travelers</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- POPULAR DESTINATIONS (Grid) -->
+        <section id="destinations" class="destinations-section">
+          <div class="container">
+            <h2>Popular Destinations</h2>
+            <p class="section-intro">
+              A few of the places our travelers return to again and again.
+            </p>
+
+            <div class="destinations-grid">
+              <article class="destination-card">
+                <div class="destination-header">
+                  <h3>Kyoto, Japan</h3>
+                  <span class="badge">Cultural</span>
+                </div>
+                <p>
+                  Wooden machiya houses, hidden tea rooms and temples tucked
+                  into the hills — perfect for slow explorers.
+                </p>
+                <div class="destination-meta">
+                  <span>Ideal stay: 6–8 days</span>
+                  <span>Best months: Mar–May</span>
+                </div>
+                <div class="destination-tags">
+                  <span class="tag">Tea houses</span>
+                  <span class="tag">Temples</span>
+                  <span class="tag">City walks</span>
+                </div>
+              </article>
+
+              <article class="destination-card">
+                <div class="destination-header">
+                  <h3>Amalfi Coast, Italy</h3>
+                  <span class="badge">Coastal</span>
+                </div>
+                <p>
+                  Lemon groves, cliffside villages and slow evenings on the
+                  water — a classic summer escape.
+                </p>
+                <div class="destination-meta">
+                  <span>Ideal stay: 4–7 days</span>
+                  <span>Best months: May–Sep</span>
+                </div>
+                <div class="destination-tags">
+                  <span class="tag">Sea views</span>
+                  <span class="tag">Boats</span>
+                  <span class="tag">Seafood</span>
+                </div>
+              </article>
+
+              <article class="destination-card">
+                <div class="destination-header">
+                  <h3>Chiang Mai, Thailand</h3>
+                  <span class="badge">Laid-back</span>
+                </div>
+                <p>
+                  Markets, mountains and cozy cafés — perfect for remote work
+                  or a gentle introduction to Southeast Asia.
+                </p>
+                <div class="destination-meta">
+                  <span>Ideal stay: 2–4 weeks</span>
+                  <span>Best months: Nov–Feb</span>
+                </div>
+                <div class="destination-tags">
+                  <span class="tag">Remote work</span>
+                  <span class="tag">Temples</span>
+                  <span class="tag">Street food</span>
+                </div>
+              </article>
+
+              <article class="destination-card">
+                <div class="destination-header">
+                  <h3>Lisbon, Portugal</h3>
+                  <span class="badge">City + Coast</span>
+                </div>
+                <p>
+                  Trams, tiled streets and surf breaks just outside the city —
+                  ideal for a long weekend or a month.
+                </p>
+                <div class="destination-meta">
+                  <span>Ideal stay: 5–10 days</span>
+                  <span>Best months: Mar–Jun</span>
+                </div>
+                <div class="destination-tags">
+                  <span class="tag">Cafés</span>
+                  <span class="tag">Ocean</span>
+                  <span class="tag">Day trips</span>
+                </div>
+              </article>
+
+              <article class="destination-card">
+                <div class="destination-header">
+                  <h3>Patagonia, Chile &amp; Argentina</h3>
+                  <span class="badge">Adventure</span>
+                </div>
+                <p>
+                  Glacier-fed lakes, endless trails and big skies — for hikers
+                  who love dramatic landscapes.
+                </p>
+                <div class="destination-meta">
+                  <span>Ideal stay: 10–14 days</span>
+                  <span>Best months: Oct–Mar</span>
+                </div>
+                <div class="destination-tags">
+                  <span class="tag">Trekking</span>
+                  <span class="tag">Wildlife</span>
+                  <span class="tag">Camping</span>
+                </div>
+              </article>
+
+              <article class="destination-card">
+                <div class="destination-header">
+                  <h3>Greek Islands</h3>
+                  <span class="badge">Island-hopping</span>
+                </div>
+                <p>
+                  String together quiet islands and lively ports to create your
+                  own balance of rest and discovery.
+                </p>
+                <div class="destination-meta">
+                  <span>Ideal stay: 7–14 days</span>
+                  <span>Best months: May–Sep</span>
+                </div>
+                <div class="destination-tags">
+                  <span class="tag">Boats</span>
+                  <span class="tag">Beaches</span>
+                  <span class="tag">Local tavernas</span>
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <!-- EXPERIENCES (3‑column Grid, responsive) -->
+        <section id="experiences" class="features-section">
+          <div class="container">
+            <h2>Curated Experiences</h2>
+            <p class="section-intro">
+              A selection of ways you can explore the world with Wanderly.
+            </p>
+
+            <div class="features-grid">
+              <article class="feature-card">
+                <h3>Custom Itineraries</h3>
+                <p>
+                  Every trip is built around what you love — food, culture,
+                  nature, or all of the above.
+                </p>
+              </article>
+
+              <article class="feature-card">
+                <h3>Local Hosts</h3>
+                <p>
+                  Stay with and learn from locals who know their home better
+                  than any guidebook.
+                </p>
+              </article>
+
+              <article class="feature-card">
+                <h3>Slow Travel Retreats</h3>
+                <p>
+                  Spend a week or more in one place. Deepen your connection
+                  instead of racing through cities.
+                </p>
+              </article>
+
+              <article class="feature-card">
+                <h3>Adventure Escapes</h3>
+                <p>
+                  Hiking, diving, surfing and more — for small groups that value
+                  safety and real adventure.
+                </p>
+              </article>
+
+              <article class="feature-card">
+                <h3>Budget-Friendly Routes</h3>
+                <p>
+                  Smart planning, off-season dates and local transport to make
+                  your money go further.
+                </p>
+              </article>
+
+              <article class="feature-card">
+                <h3>Sustainable Choices</h3>
+                <p>
+                  Partner stays and activities that prioritize community and the
+                  environment.
+                </p>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <!-- TRIP STYLES (Grid) -->
+        <section class="trip-styles-section">
+          <div class="container">
+            <h2>Ways to Travel with Wanderly</h2>
+            <p class="section-intro">
+              Different trip styles for different seasons of your life.
+            </p>
+
+            <div class="trip-styles-grid">
+              <article class="trip-style-card">
+                <h3>Solo Journeys</h3>
+                <p>
+                  Thoughtfully planned routes, safe neighborhoods and small
+                  group activities for independent travelers.
+                </p>
+                <ul>
+                  <li>Local meetups and classes</li>
+                  <li>Flexible, easy-to-adjust itineraries</li>
+                </ul>
+              </article>
+
+              <article class="trip-style-card">
+                <h3>Couples &amp; Honeymoons</h3>
+                <p>
+                  Quiet stays, unhurried meals and experiences made to be
+                  shared, from sunrise hikes to late-night jazz.
+                </p>
+                <ul>
+                  <li>Private tastings and tours</li>
+                  <li>Balance of free time and structure</li>
+                </ul>
+              </article>
+
+              <article class="trip-style-card">
+                <h3>Friends &amp; Groups</h3>
+                <p>
+                  Villas, apartments and cabins that actually fit everyone, plus
+                  activities designed for sharing.
+                </p>
+                <ul>
+                  <li>Group-friendly accommodations</li>
+                  <li>Activities with flexible group sizes</li>
+                </ul>
+              </article>
+
+              <article class="trip-style-card">
+                <h3>Remote Work Stays</h3>
+                <p>
+                  Reliable Wi‑Fi, time zone planning and daily rhythms that
+                  balance deep work and exploration.
+                </p>
+                <ul>
+                  <li>Cafés and co-working suggestions</li>
+                  <li>Weekend adventure add-ons</li>
+                </ul>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <!-- ABOUT SECTION -->
+        <section id="about" class="about-section">
+          <div class="container">
+            <h2>About Wanderly</h2>
+            <p>
+              Wanderly is a small travel studio helping curious travelers plan
+              meaningful trips. We work with local experts around the world to
+              design experiences that feel personal, flexible and thoughtful.
+            </p>
+          </div>
+        </section>
+
+        <!-- TRAVELER STORIES (Grid) -->
+        <section class="stories-section">
+          <div class="container">
+            <h2>Traveler Stories</h2>
+            <p class="section-intro">
+              A few notes from travelers who planned their trips with us.
+            </p>
+
+            <div class="stories-grid">
+              <article class="story-card">
+                <p class="story-quote">
+                  “We spent three weeks in Japan and never once felt rushed.
+                  Every city had its own rhythm, and Wanderly’s notes helped us
+                  find the quiet corners we would have missed.”
+                </p>
+                <p class="story-author">— Maya &amp; Daniel, Toronto</p>
+                <p class="story-destination">Route: Tokyo · Hakone · Kyoto</p>
+              </article>
+
+              <article class="story-card">
+                <p class="story-quote">
+                  “I worked from Lisbon for a month and still feel like I had a
+                  real break. Cafés, surf lessons and small day trips were
+                  planned around my work hours.”
+                </p>
+                <p class="story-author">— Jonah, Berlin</p>
+                <p class="story-destination">Stay: Lisbon, Portugal</p>
+              </article>
+
+              <article class="story-card">
+                <p class="story-quote">
+                  “Our group of six had different budgets and energy levels.
+                  Somehow, everyone left Patagonia feeling like the trip had
+                  been designed just for them.”
+                </p>
+                <p class="story-author">— Priya &amp; friends, Mumbai</p>
+                <p class="story-destination">
+                  Route: El Calafate · El Chaltén · Torres del Paine
+                </p>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <!-- CONTACT (Flexbox form layout) -->
+        <section id="contact" class="contact-section">
+          <div class="container contact-flex">
+            <div>
+              <h2>Plan Your Trip</h2>
+              <p>
+                Tell us where you’d like to go, how you like to travel and what
+                kind of budget you’re working with. We’ll help map out your
+                next journey.
+              </p>
+            </div>
+            <form class="contact-form">
+              <input type="text" placeholder="Name" />
+              <input type="email" placeholder="Email" />
+              <textarea
+                rows="3"
+                placeholder="Where do you want to go? What kind of trip are you imagining?"
+              ></textarea>
+              <button type="submit" class="btn primary">Send</button>
+            </form>
+          </div>
+        </section>
+      </main>
+
+      <!-- FOOTER -->
+      <footer class="site-footer">
+        <div class="container">
+          <p>Day 7 – CSS Grid Layout Completed</p>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
