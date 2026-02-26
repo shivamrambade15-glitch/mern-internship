@@ -1,0 +1,50 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #0f172a; /* dark anime-night background */
+  color: #e5e7eb;
+}
+
+.container {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 1.5rem 2rem;
+  background: rgba(15, 23, 42, 0.9);
+  border-radius: 10px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.45);
+}
+
+section {
+  margin-bottom: 2rem;
+}
+
+h1, h2 {
+  margin-bottom: 0.5rem;
+}
+
+button {
+  padding: 0.6rem 1.2rem;
+  margin-top: 0.75rem;
+  border: none;
+  border-radius: 4px;
+  background: #6366f1;
+  color: #f9fafb;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+button:hover {
+  background: #4f46e5;
+}
+
+ul {
+  padding-left: 1.25rem;
+}
+
+li {
+  margin: 0.25rem 0;
+}
