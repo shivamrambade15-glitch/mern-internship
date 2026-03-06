@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  />
+  <meta
+    name="description"
+    content="Sandy Hotel - luxury stay with special dishes, branded cuisine and designer plates."
+  />
+  <title>Sandy Hotel | Luxury Stay & Signature Dishes</title>
+
+  <!-- Attractive fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Poppins:wght@300;400;500;600&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Skip link for accessibility -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- HEADER & NAVIGATION -->
+  <header class="site-header">
+    <div class="container header-container">
+      <!-- Logo / Brand -->
+      <div class="logo-area">
+        <span class="logo-mark" aria-hidden="true">S</span>
+        <div>
+          <span class="logo-text">Sandy Hotel</span>
+          <small class="logo-subtitle">Luxury & Fine Dining</small>
+        </div>
+      </div>
+
+      <!-- Desktop navigation -->
+      <nav class="main-nav" aria-label="Primary">
+        <ul class="nav-list">
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#food-specials">Special Dishes</a></li>
+          <li><a href="#rooms">Rooms & Suites</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#pricing">Packages</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Search + Login (right side) -->
+      <div class="header-right">
+        <form class="header-search" action="#" method="get" role="search">
+          <label for="search" class="sr-only">Search dishes or rooms</label>
+          <input
+            type="search"
+            id="search"
+            name="q"
+            placeholder="Search dishes, rooms..."
+          />
+        </form>
+
+        <!-- “Login” with popup message after clicking (using <details>) -->
+        <details class="login-popup">
+          <summary class="btn btn-ghost">Login</summary>
+          <div class="login-popup-content" role="dialog" aria-label="Login message">
+            <p><strong>Welcome back to Sandy Hotel!</strong></p>
+            <p>Your account is active. Enjoy exclusive member-only discounts on rooms and signature dishes.</p>
+          </div>
+        </details>
+
+        <!-- Mobile menu toggle -->
+        <details class="mobile-nav">
+          <summary aria-label="Toggle navigation menu">Menu</summary>
+          <nav aria-label="Mobile navigation">
+            <ul class="mobile-nav-list">
+              <li><a href="#hero">Home</a></li>
+              <li><a href="#food-specials">Special Dishes</a></li>
+              <li><a href="#rooms">Rooms & Suites</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#pricing">Packages</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </nav>
+        </details>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <!-- HERO SECTION -->
+    <section id="hero" class="hero" aria-labelledby="hero-title">
+      <div class="container hero-container">
+        <div class="hero-text">
+          <p class="hero-tagline">Welcome to Sandy Hotel</p>
+          <h1 id="hero-title">Luxury stay with unforgettable flavors.</h1>
+          <p class="hero-subtitle">
+            Sandy Hotel combines warm hospitality with specially curated dishes,
+            branded cuisine and designer plates that create a complete experience.
+          </p>
+
+          <div class="hero-cta">
+            <a href="#food-specials" class="btn btn-primary">View Special Dishes</a>
+            <a href="#rooms" class="btn btn-outline">Explore Rooms & Suites</a>
+          </div>
+
+          <ul class="hero-badges" aria-label="Key highlights">
+            <li>5-star comfort</li>
+            <li>Signature & branded dishes</li>
+            <li>Sea-view designer restaurant</li>
+          </ul>
+        </div>
+
+        <figure class="hero-illustration">
+          <img
+            src="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=1200&q=80"
+            alt="Luxury hotel lobby with warm brown and cream interiors at Sandy Hotel"
+          />
+          <figcaption>
+            The Sandy Hotel lobby and dining area with modern brown and cream interior.
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- FOOD SPECIALS SECTION (Special / Branded / Designer dishes) -->
+    <section
+      id="food-specials"
+      class="section food-specials"
+      aria-labelledby="food-specials-title"
+    >
+      <div class="container">
+        <header class="section-header">
+          <p class="section-kicker">Fine dining</p>
+          <h2 id="food-specials-title">Special, Branded & Designer Dishes</h2>
+          <p class="section-subtitle">
+            Every plate at Sandy Hotel is crafted with carefully selected ingredients,
+            signature recipes and artistic presentation.
+          </p>
+        </header>
+
+        <!-- Three main categories -->
+        <div class="food-category-grid">
+          <!-- Special Dishes -->
+          <article class="food-category-card">
+            <h3>Chef’s Special Dishes</h3>
+            <p>
+              Limited-time creations by our head chef, combining local flavors
+              with international techniques.
+            </p>
+            <div class="food-items-grid">
+              <!-- Dish 1 -->
+              <article class="food-item">
+                <img
+                  class="food-img"
+                  src="https://images.unsplash.com/photo-1599487488170-d11ec9c172f0?auto=format&fit=crop&w=600&q=80"
+                  alt="Smoky tandoori prawns served on a white plate at Sandy Hotel"
+                />
+                <h4>Smoky Tandoori Prawns</h4>
+                <p class="food-item-desc">
+                  Char-grilled prawns marinated in a secret blend of coastal spices.
+                </p>
+                <ul class="ingredient-list">
+                  <li>Fresh tiger prawns</li>
+                  <li>Yogurt & lime marinade</li>
+                  <li>Smoked paprika & chilli</li>
+                  <li>Charcoal-grilled</li>
+                </ul>
+                <p class="food-price">₹ 899</p>
+              </article>
+
+              <!-- Dish 2 -->
+              <article class="food-item">
+                <img
+                  class="food-img"
+                  src="https://images.unsplash.com/photo-1559847844-5315695dadae?auto=format&fit=crop&w=600&q=80"
+                  alt="Herb-crusted cottage cheese steak with roasted vegetables at Sandy Hotel"
+                />
+                <h4>Herb-crusted Cottage Steak</h4>
+                <p class="food-item-desc">
+                  Thick slice of cottage cheese with a crunchy herb crust and butter sauce.
+                </p>
+                <ul class="ingredient-list">
+                  <li>Paneer (cottage cheese)</li>
+                  <li>Fresh herbs & breadcrumbs</li>
+                  <li>Garlic butter jus</li>
+                  <li>Roasted baby potatoes</li>
+                </ul>
+                <p class="food-price">₹ 649</p>
+              </article>
+            </div>
+          </article>
+
+          <!-- Branded Dishes -->
+          <article class="food-category-card">
+            <h3>Branded Signature Dishes</h3>
+            <p>
+              Iconic plates that define Sandy Hotel – guests come back for these flavours.
+            </p>
+            <div class="food-items-grid">
+              <!-- Dish 1 -->
+              <article class="food-item">
+                <img
+                  class="food-img"
+                  src="https://curlytales.com/wp-content/uploads/2024/12/Body-Image-BB-CT-4.jpg"
+                  alt="Sandy Royal Biryani served in a handi with saffron rice"
+                />
+                <h4>Sandy Royal Biryani</h4>
+                <p class="food-item-desc">
+                  Our most loved slow-cooked biryani served in a sealed handi.
+                </p>
+                <ul class="ingredient-list">
+                  <li>Long grain basmati rice</li>
+                  <li>Marinated chicken / veg option</li>
+                  <li>Saffron & fried onions</li>
+                  <li>House biryani masala</li>
+                </ul>
+                <p class="food-price">₹ 799</p>
+              </article>
+
+              <!-- Dish 2 -->
+              <article class="food-item">
+                <img
+                  class="food-img"
+                  src="https://www.foodnetwork.com/content/dam/images/food/fullset/2014/2/19/1/WU0701H_Molten-Chocolate-Cakes_s4x3.jpg"
+                  alt="Chocolate lava dome dessert with ice cream at Sandy Hotel"
+                />
+                <h4>Sandy Chocolate Lava Dome</h4>
+                <p class="food-item-desc">
+                  Branded dessert with molten Belgian chocolate core and vanilla ice cream.
+                </p>
+                <ul class="ingredient-list">
+                  <li>70% dark chocolate</li>
+                  <li>Soft chocolate sponge</li>
+                  <li>Vanilla bean ice cream</li>
+                  <li>Caramel drizzle & nuts</li>
+                </ul>
+                <p class="food-price">₹ 499</p>
+              </article>
+            </div>
+          </article>
+
+          <!-- Designer Dishes -->
+          <article class="food-category-card">
+            <h3>Designer Plated Dishes</h3>
+            <p>
+              Visually stunning plates designed for special occasions, photos and celebrations.
+            </p>
+            <div class="food-items-grid">
+              <!-- Dish 1 -->
+              <article class="food-item">
+                <img
+                  class="food-img"
+                  src="https://i.ytimg.com/vi/klqVCA18G6M/maxresdefault.jpg"
+                  alt="Colorful designer salad arranged like a garden on a plate"
+                />
+                <h4>Garden on a Plate Salad</h4>
+                <p class="food-item-desc">
+                  Colorful salad arranged like a miniature edible garden.
+                </p>
+                <ul class="ingredient-list">
+                  <li>Micro greens & lettuces</li>
+                  <li>Cherry tomatoes & beetroot</li>
+                  <li>Edible flowers</li>
+                  <li>Orange-honey dressing</li>
+                </ul>
+                <p class="food-price">₹ 559</p>
+              </article>
+
+              <!-- Dish 2 -->
+              <article class="food-item">
+                <img
+                  class="food-img"
+                  src="https://images.unsplash.com/photo-1515003197210-e0cd71810b5f?auto=format&fit=crop&w=600&q=80"
+                  alt="Seafood platter with grilled fish and prawns inspired by the sea"
+                />
+                <h4>Sea Breeze Platter</h4>
+                <p class="food-item-desc">
+                  Artistic seafood platter inspired by the sea near Sandy Hotel.
+                </p>
+                <ul class="ingredient-list">
+                  <li>Grilled fish fillet</li>
+                  <li>Garlic butter prawns</li>
+                  <li>Lemon herb rice</li>
+                  <li>Seaweed crisp & lemon foam</li>
+                </ul>
+                <p class="food-price">₹ 1,299</p>
+              </article>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ROOMS / SERVICES SECTION -->
+    <section id="rooms" class="section services" aria-labelledby="rooms-title">
+      <div class="container">
+        <header class="section-header">
+          <p class="section-kicker">Stay with us</p>
+          <h2 id="rooms-title">Rooms & Suites</h2>
+        </header>
+
+        <div class="services-grid">
+          <article class="service-card">
+            <img
+              class="room-img"
+              src="https://images.unsplash.com/photo-1590490359854-dfba19688d70?auto=format&fit=crop&w=900&q=80"
+              alt="Deluxe room at Sandy Hotel with cozy light-brown interiors"
+            />
+            <h3>Deluxe Room</h3>
+            <p>
+              Cozy light-brown interiors, queen bed, city view and complimentary breakfast.
+            </p>
+            <ul>
+              <li>Free Wi‑Fi & smart TV</li>
+              <li>Mini bar with branded snacks</li>
+              <li>24×7 room service</li>
+            </ul>
+          </article>
+
+          <article class="service-card">
+            <img
+              class="room-img"
+              src="https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?auto=format&fit=crop&w=900&q=80"
+              alt="Premium sea-view room at Sandy Hotel with balcony"
+            />
+            <h3>Premium Sea-View Room</h3>
+            <p>
+              Large balcony with sea view, king bed and access to rooftop lounge.
+            </p>
+            <ul>
+              <li>Welcome drink & dessert</li>
+              <li>Evening turndown service</li>
+              <li>Complimentary dinner buffet</li>
+            </ul>
+          </article>
+
+          <article class="service-card">
+            <img
+              class="room-img"
+              src="https://images.unsplash.com/photo-1520256862855-398228c41684?auto=format&fit=crop&w=900&q=80"
+              alt="Royal suite at Sandy Hotel with living area and dining table"
+            />
+            <h3>Royal Sandy Suite</h3>
+            <p>
+              Separate living area, private dining table and exclusive signature dish tasting.
+            </p>
+            <ul>
+              <li>Private butler service</li>
+              <li>Jacuzzi bath & spa kit</li>
+              <li>Chef’s table experience</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="section about" aria-labelledby="about-title">
+      <div class="container about-container">
+        <div class="about-text">
+          <header class="section-header left">
+            <p class="section-kicker">About us</p>
+            <h2 id="about-title">Sandy Hotel story</h2>
+          </header>
+          <p>
+            Sandy Hotel is inspired by the warm tones of sand, wood and soft cream.
+            Our interiors, service and food all follow the same comforting, elegant theme.
+          </p>
+          <p>
+            Our culinary team has worked in some of the best hotels across the world.
+            We use premium ingredients and carefully design every dish and dessert
+            to match the mood of your stay.
+          </p>
+
+          <figure class="about-table-wrapper">
+            <figcaption class="table-caption">
+              Popular choices at Sandy Hotel
+            </figcaption>
+            <table class="about-table">
+              <thead>
+                <tr>
+                  <th scope="col">Category</th>
+                  <th scope="col">Item</th>
+                  <th scope="col">Type</th>
+                  <th scope="col">Price (₹)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Room</td>
+                  <td>Premium Sea-View</td>
+                  <td>Stay</td>
+                  <td>4,999 / night</td>
+                </tr>
+                <tr>
+                  <td>Dish</td>
+                  <td>Sandy Royal Biryani</td>
+                  <td>Branded</td>
+                  <td>799</td>
+                </tr>
+                <tr>
+                  <td>Dish</td>
+                  <td>Sea Breeze Platter</td>
+                  <td>Designer</td>
+                  <td>1,299</td>
+                </tr>
+              </tbody>
+            </table>
+          </figure>
+        </div>
+
+        <aside class="about-aside" aria-label="Hotel stats">
+          <dl class="stats-list">
+            <div>
+              <dt>120+</dt>
+              <dd>Rooms & suites</dd>
+            </div>
+            <div>
+              <dt>40+</dt>
+              <dd>Signature dishes</dd>
+            </div>
+            <div>
+              <dt>4.8/5</dt>
+              <dd>Guest rating</dd>
+            </div>
+          </dl>
+        </aside>
+      </div>
+    </section>
+
+    <!-- PRICING / PACKAGES -->
+    <section
+      id="pricing"
+      class="section pricing"
+      aria-labelledby="pricing-title"
+    >
+      <div class="container">
+        <header class="section-header">
+          <p class="section-kicker">Stay & dine</p>
+          <h2 id="pricing-title">Popular packages</h2>
+        </header>
+
+        <div class="pricing-grid">
+          <article class="pricing-card">
+            <h3>Weekend Escape</h3>
+            <p class="price">₹ 8,999</p>
+            <p class="price-note">2 nights, Deluxe Room</p>
+            <ul class="pricing-list">
+              <li>Breakfast for two</li>
+              <li>One special dish per day</li>
+              <li>Late checkout (2 PM)</li>
+            </ul>
+            <a href="#contact" class="btn btn-outline small">Book package</a>
+          </article>
+
+          <article class="pricing-card pricing-card-featured">
+            <div class="badge">Popular</div>
+            <h3>Foodie Retreat</h3>
+            <p class="price">₹ 14,999</p>
+            <p class="price-note">2 nights, Premium Room</p>
+            <ul class="pricing-list">
+              <li>Breakfast & dinner buffet</li>
+              <li>Chef’s Special tasting platter</li>
+              <li>Complimentary dessert of the day</li>
+            </ul>
+            <a href="#contact" class="btn btn-primary small">Reserve now</a>
+          </article>
+
+          <article class="pricing-card">
+            <h3>Royal Celebration</h3>
+            <p class="price">Custom</p>
+            <p class="price-note">Royal Suite & custom menu</p>
+            <ul class="pricing-list">
+              <li>Private dining with designer dishes</li>
+              <li>Decor & cake arrangement</li>
+              <li>Live music options</li>
+            </ul>
+            <a href="#contact" class="btn btn-outline small">Plan an event</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS SECTION -->
+    <section
+      id="testimonials"
+      class="section testimonials"
+      aria-labelledby="testimonials-title"
+    >
+      <div class="container">
+        <header class="section-header">
+          <p class="section-kicker">Guest experience</p>
+          <h2 id="testimonials-title">What our guests say</h2>
+        </header>
+
+        <div class="testimonials-grid">
+          <figure class="testimonial-card">
+            <blockquote>
+              “The light brown and cream interiors feel so warm and relaxing.
+              The Sandy Royal Biryani is the best I have ever had.”
+            </blockquote>
+            <figcaption>
+              <span class="testimonial-name">Riya Sharma</span>
+              <span class="testimonial-role">Stayed in Premium Sea-View Room</span>
+            </figcaption>
+          </figure>
+
+          <figure class="testimonial-card">
+            <blockquote>
+              “We booked the Royal Celebration package. The designer dishes were
+              beautiful and delicious, and the staff made our anniversary perfect.”
+            </blockquote>
+            <figcaption>
+              <span class="testimonial-name">Kunal & Meera</span>
+              <span class="testimonial-role">Royal Sandy Suite guests</span>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section
+      id="contact"
+      class="section contact"
+      aria-labelledby="contact-title"
+    >
+      <div class="container contact-container">
+        <header class="section-header left">
+          <p class="section-kicker">Reservations</p>
+          <h2 id="contact-title">Book your stay or table</h2>
+          <p class="section-subtitle">
+            Share your dates, number of guests and any special food preferences.
+            Our team will confirm your booking soon.
+          </p>
+        </header>
+
+        <div class="contact-grid">
+          <form
+            class="contact-form"
+            action="#"
+            method="post"
+            aria-label="Booking and enquiry form"
+          >
+            <fieldset>
+              <legend>Your details</legend>
+              <div class="form-row">
+                <label for="name">Full name</label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  required
+                  placeholder="Your full name"
+                />
+              </div>
+              <div class="form-row">
+                <label for="email">Email address</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  required
+                  placeholder="you@example.com"
+                />
+              </div>
+              <div class="form-row">
+                <label for="phone">Phone number</label>
+                <input
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  placeholder="+91 98765 43210"
+                />
+              </div>
+            </fieldset>
+
+            <fieldset>
+              <legend>Booking details</legend>
+              <div class="form-row">
+                <label for="date">Check-in / Visit date</label>
+                <input type="date" id="date" name="date" />
+              </div>
+
+              <div class="form-row">
+                <span class="label">Booking type</span>
+                <div class="radio-group">
+                  <label>
+                    <input
+                      type="radio"
+                      name="booking_type"
+                      value="room"
+                      checked
+                    />
+                    Room stay
+                  </label>
+                  <label>
+                    <input
+                      type="radio"
+                      name="booking_type"
+                      value="dining"
+                    />
+                    Dining only
+                  </label>
+                  <label>
+                    <input
+                      type="radio"
+                      name="booking_type"
+                      value="event"
+                    />
+                    Event / celebration
+                  </label>
+                </div>
+              </div>
+
+              <div class="form-row">
+                <label for="guests">Number of guests</label>
+                <select id="guests" name="guests">
+                  <option value="">Select</option>
+                  <option value="1-2">1–2</option>
+                  <option value="3-5">3–5</option>
+                  <option value="6-10">6–10</option>
+                  <option value="10-plus">10+</option>
+                </select>
+              </div>
+
+              <div class="form-row">
+                <label for="message">Special requests or food preferences</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="4"
+                  placeholder="Tell us about any special dishes, allergies or celebration details..."
+                ></textarea>
+              </div>
+            </fieldset>
+
+            <div class="form-actions">
+              <button type="submit" class="btn btn-primary">
+                Send enquiry
+              </button>
+              <p class="form-note">
+                We respond within 24 hours. Your details are safe with Sandy Hotel.
+              </p>
+            </div>
+          </form>
+
+          <aside class="contact-info" aria-label="Contact information">
+            <h3>Contact us directly</h3>
+            <p>
+              Phone:
+              <a href="tel:+919876543210">+91 98765 43210</a><br />
+              Email:
+              <a href="mailto:reservations@sandyhotel.com">
+                reservations@sandyhotel.com
+              </a>
+            </p>
+
+            <h3>Location</h3>
+            <p class="contact-address">
+              Sandy Hotel,<br />
+              Seaside Road, Golden Beach,<br />
+              Goa, India
+            </p>
+
+            <h3>Quick links</h3>
+            <ul class="contact-links">
+              <li><a href="#food-specials">View special dishes</a></li>
+              <li><a href="#rooms">Explore rooms</a></li>
+              <li><a href="#pricing">Packages & offers</a></li>
+            </ul>
+          </aside>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <div class="footer-column">
+        <span class="logo-text footer-logo">Sandy Hotel</span>
+        <p class="footer-text">
+          Designed with warm light-brown tones, white detail cards and creamy finishes
+          to match the Sandy Hotel experience.
+        </p>
+      </div>
+
+      <div class="footer-column">
+        <h3>Hotel</h3>
+        <ul class="footer-links">
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#rooms">Rooms & Suites</a></li>
+          <li><a href="#food-specials">Dining</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h3>Plan</h3>
+        <ul class="footer-links">
+          <li><a href="#pricing">Packages</a></li>
+          <li><a href="#testimonials">Guest reviews</a></li>
+          <li><a href="#contact">Contact & bookings</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column footer-meta">
+        <small>&copy; 2024 Sandy Hotel. All rights reserved.</small>
+        <small>Built with semantic HTML &amp; CSS only.</small>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
